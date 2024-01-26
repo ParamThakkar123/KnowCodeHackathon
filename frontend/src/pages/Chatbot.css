@@ -1,38 +1,60 @@
+*{
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+ 
+}
+
 .app {
     height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    margin: 2rem;
+
+    /* border: 2px solid black; */
   }
   
-  .app-container {
-    width: 1000px;
+
+  /* .app-container {
+    width: 90%;
     max-width: 100%;
     padding: 0 20px;
     text-align: center;
-  }
-  
+    margin-top: 3rem;
+    font-size: larger;
+    border: 2px solid black;
+  } */
+
   .spotlight__wrapper {
+    
+    background-color: #c1c7d2;
     border-radius: 12px;
     border: 1px solid #dfe1e5;
-    margin: auto;
+    margin-bottom: 4rem;
     max-width: 600px;
-    background-color: #fff;
+    padding: 4rem;
   }
-  
+
+  .query{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:1rem;
+
+  }
+ /*  
   .spotlight__wrapper:hover,
   .spotlight__wrapper:focus {
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223, 225, 229, 0);
   }
-  
+ */ 
   .spotlight__input {
     display: block;
-    height: 56px;
-    width: 80%;
+    height: 10%;
+    width: 60%;
+    margin: 2rem;
     border: 0;
     border-radius: 12px;
     outline: none;
@@ -44,11 +66,11 @@
     background-size: 3.5%;
     padding-left: 60px;
   }
-  
+ 
   .spotlight__input::placeholder {
     line-height: 1.5em;
   }
-  
+
   .spotlight__answer {
     min-height: 115px;
     line-height: 1.5em;
@@ -70,9 +92,32 @@
     display: inline-block;
     animation: cursor-blink 1s steps(2) infinite;
   }
-  
+
+  .upload {
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    background-color: black;
+  }
+
+  .Image{
+    margin-top: 1rem;
+    margin-bottom:4rem;
+    margin-left: 2rem;
+    display: flex;
+  }
+
+  .PDF{
+    margin-top: 1rem;
+    margin-bottom:4rem;
+    margin-left: 2rem;
+    display: flex;
+  }
+
+
+   /* 
   @keyframes cursor-blink {
     0% {
       opacity: 0;
     }
-  }
+  } */
