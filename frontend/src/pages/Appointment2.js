@@ -98,7 +98,7 @@ if(json==="Appointment exists")
            style={{color:"black"}}>Take an appointment:</h3></h3>
           <form  onSubmit={handleSubmit}>
 
-            <div className="mb-4 md:flex md:justify-between">
+            <div className="mb-4 mt-4 md:flex md:justify-center">
               <div className="mb-4 md:mr-2 md:mb-0">
                 <label
                   className="block mb-2 text-sm font-bold text-gray-700"
@@ -144,7 +144,7 @@ if(json==="Appointment exists")
                   Address
                 </label>
                 <input
-                  className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border  rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  className="w-full px-3 py-2 mb-2 text-sm leading-tight text-gray-700 border  rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                   id="floating_email"
                   type="text"
                   onChange={(e) => setAddress(e.target.value)}
@@ -163,7 +163,7 @@ if(json==="Appointment exists")
                   Phone
                 </label>
                 <input
-                  className="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  className="w-full px-3 py-2 mb-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                   id="floating_company"
                   type="text"
                   onChange={(e) => setPhone(e.target.value)}
@@ -175,7 +175,7 @@ if(json==="Appointment exists")
               </div>
               
             </div>
-            <div className="mb-6 text-center">
+            <div className="mb-2 text-center">
             <select
             
             value={Slot}
@@ -195,7 +195,7 @@ if(json==="Appointment exists")
 
               <button
              type="submit"
-             className="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+             className="text-black mt-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                >
              Submit
              </button>
