@@ -52,10 +52,6 @@ function App() {
               element={user ? <Chatbot /> : <Navigate to="/login" />}
             />
             <Route
-              exact path="/maps"
-              element={user ? <BingMap /> : <Navigate to="/login" />}
-            />
-            <Route
               exact path="/products/:category"
               element={user ? <ProductList /> : <Navigate to="/login" />}
             />
@@ -100,7 +96,7 @@ function App() {
 
             <Route
               path="/map"
-              element={user ? <Map /> : <Navigate to="/login" />}
+              element={user ? <BingMap /> : <Navigate to="/login" />}
             />
           </Routes>
         </div>

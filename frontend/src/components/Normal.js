@@ -8,7 +8,7 @@ const Normal = () => {
             style={{color:"black"}}>BMI: {bmi}</h1>
             <h2>NORMAL</h2>
             <img src="http://static.oprah.com/images/o2/201403/201403-orig-think-fit-1-949x534.jpg"></img>
-            <p> maintaining a healthy weight includes healthy eating, physical activity, optimal sleep, and stress reduction. Several other factors may also affect weight gain. Healthy eating features a variety of healthy foods.
+            <p> Maintaining a healthy weight includes healthy eating, physical activity, optimal sleep, and stress reduction. Several other factors may also affect weight gain. Healthy eating features a variety of healthy foods.
 
                 Like many chronic conditions, obesity is preventable with a healthy lifestyle—staying active, following a healthy diet, getting adequate sleep, and so on. The strategies for prevention are also those for treatment if you are already overweight or obese.</p>
             <h3>How to stay fit?</h3>
