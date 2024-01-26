@@ -41,6 +41,9 @@ const Navbar2 = () => {
               <span className='hi'><Link to="/community"
               style={{ textDecoration: 'none',
               color:"white" }}> Community </Link></span>
+              <span className='hi'><Link to="/chatbot"
+                style={{ textDecoration: 'none',
+                color:"white" }}>  Chatbot </Link></span>
               <span className='hi'><Link to="/bmi"
               style={{ textDecoration: 'none',
               color:"white" }}> BMI</Link></span>

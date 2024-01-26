@@ -26,6 +26,7 @@ import ProductList from './pages/ProductList';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import PredictForm from './components/PredictForm';
+import Chatbot from './pages/Chatbot';
 
 // import './App.css';
 
@@ -45,6 +46,10 @@ function App() {
             <Route
               exact path="/shop"
               element={user ? <EcomHome /> : <Navigate to="/login" />}
+            />
+            <Route
+              exact path="/chatbot"
+              element={user ? <Chatbot /> : <Navigate to="/login" />}
             />
             <Route
               exact path="/products/:category"
