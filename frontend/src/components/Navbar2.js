@@ -44,6 +44,11 @@ const Navbar2 = () => {
               <span className='hi'><Link to="/chatbot"
                 style={{ textDecoration: 'none',
                 color:"white" }}>  Chatbot </Link></span>
+
+              <span className='hi'><Link to="/maps"
+                style={{ textDecoration: 'none',
+                color:"white" }}>  Maps </Link></span>
+
               <span className='hi'><Link to="/bmi"
               style={{ textDecoration: 'none',
               color:"white" }}> BMI</Link></span>

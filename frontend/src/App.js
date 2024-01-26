@@ -27,7 +27,7 @@ import Product from './pages/Product';
 import Cart from './pages/Cart';
 import PredictForm from './components/PredictForm';
 import Chatbot from './pages/Chatbot';
-
+import BingMap from './pages/BingMap';
 // import './App.css';
 
 function App() {
@@ -50,6 +50,10 @@ function App() {
             <Route
               exact path="/chatbot"
               element={user ? <Chatbot /> : <Navigate to="/login" />}
+            />
+            <Route
+              exact path="/maps"
+              element={user ? <BingMap /> : <Navigate to="/login" />}
             />
             <Route
               exact path="/products/:category"
