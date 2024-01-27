@@ -21,9 +21,15 @@ import ProductList from './pages/ProductList';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import PredictForm from './components/PredictForm';
+<<<<<<< HEAD
 import Video from './pages/Video';
 import Room from './pages/Room';
 import Chat from './pages/Chat';
+=======
+import Chatbot from './pages/Chatbot';
+import BingMap from './pages/BingMap';
+// import './App.css';
+>>>>>>> 28392634ce7281fcb7b1b56d79d81072a3934642
 
 function App() {
   const { user } = useAuthContext()
@@ -41,6 +47,10 @@ function App() {
             <Route
               exact path="/shop"
               element={user ? <EcomHome /> : <Navigate to="/login" />}
+            />
+            <Route
+              exact path="/chatbot"
+              element={user ? <Chatbot /> : <Navigate to="/login" />}
             />
             <Route
               exact path="/products/:category"
@@ -93,7 +103,7 @@ function App() {
 
             <Route
               path="/map"
-              element={user ? <Map /> : <Navigate to="/login" />}
+              element={user ? <BingMap /> : <Navigate to="/login" />}
             />
           </Routes>
         </div>
