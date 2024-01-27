@@ -4,16 +4,11 @@ import './App.css';
 // pages & components
 import Home from './pages/Home'
 import Login2 from './pages/Login2'
-import Login from './pages/Login'
-import Signup from './pages/Signup'
 import Signup2 from './pages/Signup2'
-import Navbar from './components/Navbar'
 import Navbar2 from './components/Navbar2'
-import Appointment from './pages/Appointment'
 import Appointment2 from './pages/Appointment2'
 import Map from './pages/Map'
 import BMI from './pages/BMI'
-import Create from './components/Create'
 import Create2 from './components/Create2'
 import Under from './components/Under_S'
 import Normal from './components/Normal'
@@ -26,8 +21,9 @@ import ProductList from './pages/ProductList';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import PredictForm from './components/PredictForm';
-
-// import './App.css';
+import Video from './pages/Video';
+import Room from './pages/Room';
+import Chat from './pages/Chat';
 
 function App() {
   const { user } = useAuthContext()
@@ -78,6 +74,12 @@ function App() {
               path="/signup"
               element={!user ? <Signup2 /> : <Navigate to="/" />}
             />
+            <Route
+            path='/video'
+            element={<Video/>}
+            />
+            <Route path='/chat' element={<Chat/>}/>
+            <Route path='/room/:roomId' element={<Room/>}/>
             <Route path="bmi" element={user ? <BMI /> : <Navigate to="/login" />}></Route>
             <Route
               path="/appointment"
